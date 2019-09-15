@@ -1,0 +1,17 @@
+.container {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f6f6fc;
+}
+
+.container--center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login {
+  display: block;
+  width: 300px;
+}
