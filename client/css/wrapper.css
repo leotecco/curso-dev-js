@@ -14,4 +14,6 @@
 .login {
   display: block;
   width: 300px;
+  max-width: 300px;
+  padding: 1rem;
 }

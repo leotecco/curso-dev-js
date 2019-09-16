@@ -7,8 +7,8 @@
 .form-field .form-field__input {
   color: #585858;
   font-size: 1rem;
-  border-radius: 0.6rem;
-  padding: 1rem;
+  border-radius: 2rem;
+  padding: 1rem 1.5rem;
   border: 1px solid #c0c0c0;
   transition: box-shadow 0.25s ease;
 }

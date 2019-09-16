@@ -1,8 +1,8 @@
 .button {
   width: 100%;
   font-size: 1rem;
-  border-radius: 0.6rem;
-  padding: 1rem;
+  border-radius: 2rem;
+  padding: 1rem 1.5rem;
   border: 1px solid #373759;
   color: #585858;
   cursor: pointer;
