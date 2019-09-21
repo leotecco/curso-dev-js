@@ -1,0 +1,55 @@
+.message {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.message .message__user {
+  margin-bottom: 0.2rem;
+  font-size: 0.7rem;
+  color: #c3c3c3;
+}
+
+.message .message__text {
+  font-size: 0.9rem;
+}
+
+.message .message__box {
+  width: 45%;
+  padding: 0.8rem;
+}
+
+.message.message--sent {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.message.message--sent .message__box {
+  background-color: #6c89f4;
+  border-radius: 0.8rem 0.8rem 0 0.8rem;
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(108, 138, 244, 0.25);
+  -moz-box-shadow: 0px 0px 12px 0px rgba(108, 138, 244, 0.25);
+  box-shadow: 0px 0px 12px 0px rgba(108, 138, 244, 0.25);
+}
+
+.message.message--sent .message__text {
+  color: #ffffff;
+}
+
+.message.message--received {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.message.message--received .message__box {
+  border-radius: 0.8rem 0.8rem 0 0.8rem;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(184, 184, 184, 0.5);
+  -moz-box-shadow: 0px 0px 12px 0px rgba(184, 184, 184, 0.5);
+  box-shadow: 0px 0px 12px 0px rgba(184, 184, 184, 0.5);
+  border-radius: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.message.message--received .message__text {
+  color: #525252;
+}

@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="./css/components/form-field.css" />
     <link rel="stylesheet" href="./css/components/button.css" />
     <link rel="stylesheet" href="./css/components/sidebar.css" />
-    <link rel="stylesheet" href="./css/components/messages.css" />
+    <link rel="stylesheet" href="./css/components/conversation.css" />
+    <link rel="stylesheet" href="./css/components/message.css" />
     <title>Chat</title>
   </head>
   <body>
@@ -21,10 +22,7 @@
         <div class="sidebar">
           <h1 class="sidebar__title">Usuários</h1>
           <div class="form-field form-field--small">
-            <input
-              class="form-field__input"
-              placeholder="Pesquisar usuários..."
-            />
+            <input class="form-field__input" placeholder="Pesquisar usuários" />
           </div>
 
           <ul class="sidebar__list-user">
@@ -54,7 +52,45 @@
             </li>
           </ul>
         </div>
-        <div class="messages"></div>
+        <div class="conversation">
+          <div class="conversation__messages">
+            <div class="message message--sent">
+              <div class="message__box">
+                <p class="message__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit
+                </p>
+              </div>
+            </div>
+
+            <div class="message message--sent">
+              <div class="message__box">
+                <p class="message__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit
+                </p>
+              </div>
+            </div>
+
+            <div class="message message--received">
+              <div class="message__box">
+                <p class="message__user">
+                  Leonardo Jorge Tecco
+                </p>
+                <p class="message__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="conversation__message">
+            <div class="form-field">
+              <input
+                class="form-field__input"
+                placeholder="Escreva uma mensagem"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </body>
