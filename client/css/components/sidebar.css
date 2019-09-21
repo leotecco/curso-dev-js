@@ -1,0 +1,63 @@
+.sidebar {
+  display: block;
+  width: 30%;
+  height: 100%;
+  border-right: 1px solid #c0c0c0;
+  padding: 1rem;
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar .sidebar__title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 1rem 0;
+  color: #2a343f;
+}
+
+.sidebar .sidebar__list-user {
+  padding: 1rem 0;
+}
+
+.sidebar .sidebar__user {
+  width: 100%;
+  position: relative;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  padding: 0.2rem 0.8rem;
+  cursor: pointer;
+}
+
+.sidebar .sidebar__user::before {
+  content: '';
+  display: block;
+  width: 0.4rem;
+  height: 100%;
+  position: absolute;
+  background-color: #373759;
+  top: 0;
+  left: 0;
+}
+
+.sidebar .sidebar__user-name {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #2a343f;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.sidebar .sidebar__user-status {
+  font-size: 0.8rem;
+  display: block;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #c3c3c3;
+}

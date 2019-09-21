@@ -1,19 +1,21 @@
 .button {
   width: 100%;
   font-size: 1rem;
-  border-radius: 2rem;
+  border-radius: 0.4rem;
   padding: 1rem 1.5rem;
-  border: 1px solid #373759;
   color: #585858;
   cursor: pointer;
+  transition: box-shadow 0.25s ease;
 }
 
 .button--primary {
+  border: 1px solid #373759;
   background-color: #373759;
   color: #ffffff;
 }
 
-.button:focus {
+.button.button--primary:hover,
+.button.button--primary:focus {
   outline: none;
   -webkit-box-shadow: 0px 0px 12px 0px rgb(55, 55, 89, 0.75);
   -moz-box-shadow: 0px 0px 12px 0px rgb(55, 55, 89, 0.75);

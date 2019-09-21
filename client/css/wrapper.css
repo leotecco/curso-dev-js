@@ -12,8 +12,14 @@
 }
 
 .login {
-  display: block;
   width: 300px;
   max-width: 300px;
   padding: 1rem;
+}
+
+.chat {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
 }

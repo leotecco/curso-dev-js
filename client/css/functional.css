@@ -1,3 +1,7 @@
 .mb-base {
   margin-bottom: 1rem;
 }
+
+.mb-small {
+  margin-bottom: 0.5rem;
+}
