@@ -38,6 +38,7 @@ io.on('connection', function(socket) {
   // Remove usuário quando desconecta
   socket.on('disconnect', () => {
     users = users.filter(user => user.id !== socket.id)
+    io.emit('listUsers', users)
   })
 
   // Emite mensagens anteriores
