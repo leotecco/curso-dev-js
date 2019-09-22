@@ -15,15 +15,19 @@
   </head>
   <body>
     <section class="container container--center">
-      <div class="login">
+      <form class="login" action="./chat.html" method="GET">
         <div class="form-field mb-base">
-          <input class="form-field__input" placeholder="Nome de usuário" />
+          <input
+            class="form-field__input"
+            name="user"
+            placeholder="Nome de usuário"
+          />
         </div>
         <div class="form-field mb-base">
-          <input class="form-field__input" placeholder="Status" />
+          <input class="form-field__input" name="status" placeholder="Status" />
         </div>
         <button class="button button--primary">Entrar</button>
-      </div>
+      </form>
     </section>
   </body>
 </html>
