@@ -1,3 +1,4 @@
+// Captura parâmetros da URL
 const getURLParameters = () => {
   const urlString = window.location.href
   const url = new URL(urlString)
@@ -10,6 +11,7 @@ const getURLParameters = () => {
   }
 }
 
+// Cria lista de usuários
 const renderListUser = users => {
   const list = document.querySelector('#list-user')
   list.innerHTML = ''
@@ -33,13 +35,16 @@ const renderListUser = users => {
   })
 }
 
+// Cria conexão
 const socket = io('ws://localhost:3000')
 
+// Recebe evento de conexão
 socket.on('connect', () => {
   const data = getURLParameters()
   socket.emit('createUser', data)
 })
 
+// Recebe evento de listagem de usuários
 socket.on('listUsers', users => {
   renderListUser(users)
 })
