@@ -25,32 +25,7 @@
             <input class="form-field__input" placeholder="Pesquisar usuários" />
           </div>
 
-          <ul class="sidebar__list-user">
-            <li class="sidebar__user mb-small">
-              <p class="sidebar__user-name">Lorem ipsum</p>
-              <p class="sidebar__user-status">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-            </li>
-            <li class="sidebar__user mb-small">
-              <p class="sidebar__user-name">Lorem ipsum</p>
-              <p class="sidebar__user-status">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-            </li>
-            <li class="sidebar__user mb-small">
-              <p class="sidebar__user-name">Lorem ipsum</p>
-              <p class="sidebar__user-status">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-            </li>
-            <li class="sidebar__user mb-small">
-              <p class="sidebar__user-name">Lorem ipsum</p>
-              <p class="sidebar__user-status">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-            </li>
-          </ul>
+          <ul class="sidebar__list-user" id="list-user"></ul>
         </div>
         <div class="conversation">
           <div class="conversation__messages">
@@ -155,5 +130,8 @@
         </div>
       </div>
     </section>
+
+    <script src="./js/socket.io.js"></script>
+    <script src="./js/chat.js"></script>
   </body>
 </html>
