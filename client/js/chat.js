@@ -1,3 +1,6 @@
+let allUsers = []
+let listedUsers = []
+
 // Captura parâmetros da URL
 const getURLParameters = () => {
   const urlString = window.location.href
@@ -33,6 +36,11 @@ const renderListUser = users => {
     item.appendChild(status)
     list.appendChild(item)
   })
+}
+
+const renderListWithFilter = text => {
+  const filteredUsers = allUsers.filter(user => user.user.includes(text))
+  renderListUser(filteredUsers)
 }
 
 // Cria lista de mensagens
@@ -87,20 +95,33 @@ const listenerFormMessage = () => {
   })
 }
 
+const listenerInputSearch = () => {
+  const input = document.querySelector('#input-search')
+
+  input.addEventListener('keyup', event => {
+    const value = event.target.value
+    renderListWithFilter(value)
+  })
+}
+
 // Cria conexão
 const socket = io('ws://localhost:3000')
 
+listenerFormMessage()
+listenerInputSearch()
+
 // Recebe evento de conexão
 socket.on('connect', () => {
-  listenerFormMessage()
-
   const data = getURLParameters()
   socket.emit('createUser', data)
 })
 
 // Recebe evento de listagem de usuários
 socket.on('listUsers', users => {
-  renderListUser(users)
+  allUsers = users
+
+  const value = document.querySelector('#input-search').value
+  renderListWithFilter(value)
 })
 
 socket.on('newMessages', messages => {
