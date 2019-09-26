@@ -1,4 +1,4 @@
-// Função responsável por capturar o usuário da
+// Função responsável por capturar o usuário da URL
 function retornaUsuario(id) {
   var urlString = window.location.href
   var url = new URL(urlString)
@@ -14,7 +14,7 @@ function retornaUsuario(id) {
 
 var socket = io('ws://localhost:3000') // Cria conexão com o server
 
-// Evento recebido pelo client quando
+// Evento recebido pelo client quando é estabelecida a conexão com o server
 socket.on('connect', function() {
   alert('Conectado')
 
